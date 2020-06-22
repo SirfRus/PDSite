@@ -13,6 +13,8 @@ export class IetrComponent implements OnInit {
   ngOnInit(): void {
   }
 
+  languages: String[] = ['cpp'];
+  
   getJPG() {
     this.http.get('https://upload.wikimedia.org/wikipedia/commons/4/41/Sunflower_from_Silesia2.jpg').subscribe(data => {
       return data;

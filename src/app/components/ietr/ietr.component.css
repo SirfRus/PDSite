@@ -51,18 +51,19 @@
     opacity: 1;
   }  
   .imgwrap {
-    float: right;
-    margin: 2%;
+    float: left;
+    margin: 2% auto;
     width: 40%;
   }  
   .img-thumbnail {  
-    width: 100%;
+    width: 100%;    
     height: auto;
   }
   button {
     width: 100%;
   }
 .codewrap {  
-  width: 54%; 
-  padding: 0 auto;
+  float: left;
+  margin: 2%;
+  width: 60%;
 }
