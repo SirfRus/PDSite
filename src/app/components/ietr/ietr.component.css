@@ -1,0 +1,65 @@
+
+.example-sidenav-content {
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+  }  
+  .example-sidenav {
+    padding: 20px;
+  }
+  
+  #field {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;  
+    margin-bottom: 1%;
+    border: 1px solid rgba(0, 0, 0, 0.2);   
+    border-top: 15px solid black;
+    border-radius: 15px; 
+    background: rgba(47, 47, 47);  
+  }
+  #sidebar {    
+    float: left;
+    height: 100%;
+    width: 100%;
+  }
+  .example-container {        
+    background: rgba(47, 47, 47);    
+    border-radius: 0 0 15px 15px;
+    margin: 0 auto;    
+    height: 100%;      
+  }  
+  #list {       
+    padding: 0;
+    width: 200px;    
+  }  
+  #list ul {      
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+  }
+  li {
+    width: 100%;
+    padding: 0;
+    margin: 0 auto;
+    color: black;
+  }
+  #butdiv {
+    float: left;
+    width: min-content;
+    margin: 10px;  
+  }
+  button {  
+    width: 100%;
+    margin: 0 auto;  
+  } 
+  .imgwrap {
+    float: right;
+    margin: 2%;
+    width: 40%;
+  }
+  
+  .img-thumbnail {  
+    width: 100%;
+    height: auto;
+  }
