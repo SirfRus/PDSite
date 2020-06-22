@@ -1,7 +1,7 @@
-#field {
-    width: 80%;
-    height: 100%;
-    margin: 0 auto;  
+#field {  
+    width: 90%;
+    height: 96%;
+    margin: 1% auto;  
     margin-bottom: 1%;
     border: 1px solid rgba(0, 0, 0, 0.2);   
     border-top: 15px solid black;

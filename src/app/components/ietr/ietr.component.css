@@ -8,26 +8,20 @@
     padding: 20px;
   }
   
-  #field {
-    width: 80%;
-    height: 100%;
-    margin: 0 auto;  
+  #field {    
+    width: 90%;
+    min-height: 96%;
+    margin: 1% auto;  
     margin-bottom: 1%;
     border: 1px solid rgba(0, 0, 0, 0.2);   
     border-top: 15px solid black;
     border-radius: 15px; 
     background: rgba(47, 47, 47);  
   }
-  #sidebar {    
-    float: left;
-    height: 100%;
-    width: 100%;
-  }
   .example-container {        
     background: rgba(47, 47, 47);    
     border-radius: 0 0 15px 15px;
-    margin: 0 auto;    
-    height: 100%;      
+    margin: 0 auto;               
   }  
   #list {       
     padding: 0;
@@ -44,22 +38,31 @@
     margin: 0 auto;
     color: black;
   }
-  #butdiv {
+  #butdiv {    
+    position: sticky;
+    top: 10px;
     float: left;
     width: min-content;
-    margin: 10px;  
+    margin: 10px;      
+    opacity: 0.1;  
+    -webkit-transition: opacity 0.5s;  
   }
-  button {  
-    width: 100%;
-    margin: 0 auto;  
-  } 
+  #butdiv:hover {
+    opacity: 1;
+  }  
   .imgwrap {
     float: right;
     margin: 2%;
     width: 40%;
-  }
-  
+  }  
   .img-thumbnail {  
     width: 100%;
     height: auto;
   }
+  button {
+    width: 100%;
+  }
+.codewrap {  
+  width: 54%; 
+  padding: 0 auto;
+}
