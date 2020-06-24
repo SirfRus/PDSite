@@ -13,13 +13,6 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
-import { HighlightModule, HIGHLIGHT_OPTIONS } from 'ngx-highlightjs'
-
-export function getHighlightLanguages() {
-  return {
-    cpp: () => import('highlight.js/lib/languages/cpp')
-  };
-}
 
 @NgModule({
   declarations: [
@@ -38,17 +31,9 @@ export function getHighlightLanguages() {
     MatIconModule,
     MatSidenavModule,     
     HttpClientModule,    
-    BrowserAnimationsModule,
-    HighlightModule
+    BrowserAnimationsModule,    
   ],
-  providers: [
-    {
-      provide: HIGHLIGHT_OPTIONS,
-      useValue: {
-        languages: getHighlightLanguages()
-      }
-    }
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
