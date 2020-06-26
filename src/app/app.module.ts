@@ -13,6 +13,7 @@ import {MatSidenavModule} from '@angular/material/sidenav';
 import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
+import { TheteamComponent } from './components/theteam/theteam.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
     HeaderComponent,
     MainpageComponent,
     IetrComponent,
-    routingComponents 
+    routingComponents,
+    TheteamComponent 
   ],
   imports: [
     BrowserModule,

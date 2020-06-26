@@ -1,0 +1,27 @@
+#field {  
+    display: flex; 
+    flex-direction: row;      
+    width: 80%;
+    min-height: 96%;
+    margin: 1% auto;  
+    margin-bottom: 1%;
+    border: 1.5px solid rgba(47, 47, 47, 0.2);       
+    border-radius: 15px; 
+    background: rgb(79, 79, 79);  
+  }
+.perstable {
+    width: 44%;
+    margin: 2% auto;
+    height: 100%;    
+    background: rgb(91, 91, 91);
+    border: 2px solid rgb(132, 132, 132);
+}
+img {
+    width: 100%;
+    height: auto;
+}
+.imgwrap {
+    float: left;
+    width: 15%;
+    margin: 2%;
+}

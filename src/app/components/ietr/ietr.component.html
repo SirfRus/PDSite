@@ -1,25 +1,29 @@
 <div id="field">
 
-  <mat-drawer-container class="example-container">    
+  <mat-drawer-container class="example-container">        
 
     <mat-drawer #drawer class="example-sidenav" mode="over" id="list">
       <ul class="list-group list-group-flush" *ngFor="let obj of exmDB">
-        <li class="list-group-item"><button mat-button>Пример {{obj.id  }} </button></li>          
+        <li class="list-group-item"><button mat-button (click)="chooseExm(obj.id, obj.src, obj.name)">{{obj.name}} </button></li>          
       </ul>
-    </mat-drawer>
+    </mat-drawer>    
   
     <div id="butdiv">          
       <mat-button-toggle value="left" aria-label="Text align left" (click)="drawer.toggle()">
         <mat-icon>format_align_left</mat-icon>
       </mat-button-toggle>      
     </div>      
+
+    <div id="logo">
+      {{exmName}}
+    </div>
     
     <div id="exampleshow">              
       <div class="codewrap">
-        <pre><code>{{code}}</code></pre>
+        <pre><code>{{code[1].code}}</code></pre>
       </div>
       <div class="imgwrap">          
-        <img src="../../../assets/Examples/exm-1/exm-1.png" class="img-thumbnail" alt="Responsive image">          
+        <img [src]="link" class="img-thumbnail" alt="Responsive image">          
       </div>
     </div>      
 
