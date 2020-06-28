@@ -4,7 +4,7 @@
 
     <mat-drawer #drawer class="example-sidenav" mode="over" id="list">
       <ul class="list-group list-group-flush" *ngFor="let obj of exmDB">
-        <li class="list-group-item"><button mat-button (click)="chooseExm(obj.id, obj.src, obj.name)">{{obj.name}} </button></li>          
+        <li class="list-group-item"><button mat-button (click)="chooseExm(obj.id, obj.src, obj.name)">{{obj.id}} : {{obj.name}} </button></li>          
       </ul>
     </mat-drawer>    
   
@@ -19,13 +19,19 @@
     </div>
     
     <div id="exampleshow">              
-      <div class="codewrap">
-        <pre><code>{{code[1].code}}</code></pre>
+      <div class="codewrap">        
+        <pre><p class="codelogo">Код программы</p><code>{{code[idchecker-1].code}}</code></pre>
       </div>
       <div class="imgwrap">          
         <img [src]="link" class="img-thumbnail" alt="Responsive image">          
       </div>
-    </div>      
+      <div class="linkswrap">
+        <p class="codelogo">Список классов и функций</p>
+        <ul *ngFor="let obj of code[idchecker-1].links">
+          <li><a [href]="obj.href" target="_blank">{{obj.link}}</a></li>          
+        </ul>
+      </div>
+    </div>          
 
   </mat-drawer-container>    
       

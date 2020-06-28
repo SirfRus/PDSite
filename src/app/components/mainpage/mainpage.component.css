@@ -1,12 +1,12 @@
 #field {  
     display: flex; 
     flex-direction: column;      
-    width: 80%;
+    width: 90%;
     min-height: 96%;
     margin: 1% auto;  
     margin-bottom: 1%;
     border: 1.5px solid rgba(47, 47, 47, 0.2);       
-    border-radius: 15px; 
+    border-radius: 5px; 
     background: rgb(79, 79, 79);  
   }
   img {

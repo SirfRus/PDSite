@@ -14,14 +14,16 @@ export class IetrComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  chooseExm(id: number, link: string, name: string) {
+  chooseExm(id, link: string, name: string) {
     this.idchecker = id;
     this.link = link;
     this.exmName = name;
   }
+
   link: string = "../../../assets/Examples/exm-1.png";  
-  idchecker: Number = 1;
+  idchecker = 1;
   exmName: string = "2D эскиз";
+  code = this.Datacontainer.exms;  
 
   exmDB = [    
     { id: 1, src: "../../../assets/Examples/exm-1.png", name: "2D эскиз" },
@@ -33,7 +35,5 @@ export class IetrComponent implements OnInit {
     { id: 7, src: "../../../assets/Examples/exm-7.png", name: "Построение крюка операцией лофта" },
     { id: 8, src: "../../../assets/Examples/exm-8.png", name: "Операция сдвига" },
     { id: 9, src: "../../../assets/Examples/exm-9.png", name: "Построение червяка операцией сдвига" },
-  ];
-  
-  code = this.Datacontainer.exms;  
+  ];  
 }
