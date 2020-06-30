@@ -14,7 +14,8 @@ import {MatIconModule} from '@angular/material/icon';
 import {MatButtonModule} from '@angular/material/button';
 import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import { TheteamComponent } from './components/theteam/theteam.component';
-import { MatTabsModule } from '@angular/material/tabs';
+import { MatVideoModule } from 'mat-video';
+import { MatMenuModule } from '@angular/material/menu';
 
 @NgModule({
   declarations: [
@@ -34,8 +35,9 @@ import { MatTabsModule } from '@angular/material/tabs';
     MatIconModule,
     MatSidenavModule,     
     HttpClientModule,    
-    BrowserAnimationsModule,   
-    MatTabsModule 
+    BrowserAnimationsModule,       
+    MatVideoModule,
+    MatMenuModule
   ],
   providers: [],
   bootstrap: [AppComponent]

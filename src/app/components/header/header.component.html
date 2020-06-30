@@ -11,11 +11,12 @@
                 <button mat-stroked-button routerLink="/ietrlist">Примеры</button>
             </li>
             <li class="nav-item">
-                <button mat-stroked-button>Медиа</button>
-            </li>
-            <li class="nav-item">
-                <button mat-stroked-button routerLink="/theteam">Команда</button>
-            </li>            
+                <button mat-button [matMenuTriggerFor]="menu">Медиа</button>
+                <mat-menu #menu="matMenu">
+                    <button mat-menu-item>Изображения</button>
+                    <button mat-menu-item>Видео</button>
+                </mat-menu>
+            </li>                                  
         </ul>          
     </nav>
 </div>

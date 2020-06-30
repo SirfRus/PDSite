@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, ViewChild } from '@angular/core';
 
 @Component({
   selector: 'app-mainpage',
@@ -10,6 +10,12 @@ export class MainpageComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
+  }
+
+  @ViewChild('videoPlayer') videoplayer: any;
+
+  toggleVideo() {
+    this.videoplayer.play();
   }
 
 }

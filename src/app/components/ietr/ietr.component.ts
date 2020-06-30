@@ -17,12 +17,12 @@ export class IetrComponent implements OnInit {
   chooseExm(id, link: string, name: string) {
     this.idchecker = id;
     this.link = link;
-    this.exmName = name;
+    this.exmName = id.toString() +": "+name;
   }
 
   link: string = "../../../assets/Examples/exm-1.png";  
   idchecker = 1;
-  exmName: string = "2D эскиз";
+  exmName: string = "1: 2D эскиз";
   code = this.Datacontainer.exms;  
 
   exmDB = [    

@@ -1,106 +1,121 @@
-  #field {
-    display: flex; 
-    flex-direction: column;      
-    width: 90%;
-    min-height: 96%;
-    margin: 1% auto;  
-    margin-bottom: 1%;
-    border: 1.5px solid rgba(47, 47, 47, 0.2);       
-    border-radius: 5px; 
-    background: rgb(79, 79, 79);  
-  }
-  .example-container {
-    background: rgb(79, 79, 79);      
-    border-radius: 5px;
-    width: 100%;      
-  }   
-  #logo {
-    text-align: center;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 22pt;
-    color: white;
-    margin: 0 auto;
-    width: 100%;
-    height: 100%;
-    padding: 1.5%;
-    background: rgb(108, 108, 108);  
-    border-bottom: 1.5px solid rgb(47, 47, 47);
-  } 
-  #list {    
-    display: flex;  
-    align-items: center;
-    justify-content: center;       
-  }  
-  #list ul {      
-    width: 100%;
-    margin: 0 auto;
-    padding: 0;
-  }
-  #list li {    
-    width: 100%;
-    padding: 0;
-    margin: 0 auto;
-    color: black;    
-  }
-  #list button {    
-    border-radius: 0px;
-    border-bottom: 1px solid;
-    border-color: rgb(111, 111, 111);
-    width: 100%;
-    text-align: left;
-  }
-  #butdiv {    
-    position: fixed;               
-    margin: 5px;      
-    opacity: 0.5;  
-    transition: opacity 0.5s;        
-  }
-  #butdiv:hover {
-    opacity: 1;
-  } 
-  .imgwrap {
-    float: right;    
-    margin: 2%;
-    width: 34%;
-  }  
-  .img-thumbnail {     
-    border: 1px solid rgb(0,0,0);
-    border-radius: 10px; 
-    width: 100%;    
-    height: auto;
-  } 
-.codewrap {  
-  float: left;
-  margin: 2%;    
-  width: 58%;  
+.example-container {
+  display: flex; 
+  flex-direction: column;      
+  width: 90%;    
+  margin: 1% auto;        
+  border: 5px solid rgba(78, 81, 96, 0.8);             
+  background: rgba(199, 191, 191, 0.5);    
+}   
+#list {    
+  display: flex;  
+  align-items: center;
+  justify-content: center;     
+  background: rgba(154, 154, 154, 0.5);  
+}  
+#list ul {      
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+#list li {    
+  width: 100%;
+  padding: 0;
+  margin: 0 auto;
+  color: black;    
+}
+#list button {    
+  border-radius: 0px;
+  border-bottom: 1px solid;
+  border-color: rgb(111, 111, 111);
+  width: 100%;
+  text-align: left;
+  background: rgb(221, 221, 221);
+  color: rgb(62, 62, 62);
+}
+#butdiv {    
+  position: fixed;               
+  margin: 5px;      
+  opacity: 0.5;  
+  transition: opacity 0.5s;        
+}
+#butdiv:hover {
+  opacity: 1;
+} 
+#logo {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 22pt;
+  color: white;
+  margin: 0 auto;
+  width: 100%;  
+  padding: 1.6%;
+  background: rgb(108, 108, 108);  
+  border-bottom: 1.5px solid rgb(47, 47, 47);
+} 
+.example-show {  
+  display: flex;
+  flex-direction: row;
   
+  min-height: 100%;  
 }
-pre {
-  border: 1px solid rgb(0,0,0);
-  border-radius: 10px;
-  background: rgb(56, 56, 56);
-  color: rgb(220, 220, 220);       
+.codewrap {    
+  margin: 1% 0.5% 1% 1%;
+  width: 59%;       
 }
-.linkswrap {
-  float: left;
-  margin: 1% 2%;
-  width: 34%;  
-  border: 1px solid rgb(0,0,0);
-  border-radius: 10px;
+.codewrap pre::-webkit-scrollbar {
+  width: 1em;
+}
+.codewrap pre::-webkit-scrollbar-thumb {
+  background-color: darkgrey;
+  outline: 1px solid slategrey;
+}
+pre {  
+  max-height: 1000px;
   background: rgb(56, 56, 56);
-  color: rgb(191, 189, 189);
+  color: rgb(220, 220, 220);    
+  margin: 0;  
+}
+.codelogo {
+  text-align: center;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 14pt;
+  color: white;    
+  padding: 2%;
+  border-bottom: 1.5px solid rgba(147, 147, 147, 0.5);
+}
+.sidewrap {
+  display: flex;
+  flex-direction: column;
+  margin: 1% 1% 1% 0.5%;
+  width: 38%;    
+}
+.imgwrap {       
+  width: 100%;
+}  
+.img-thumbnail {         
+  width: 100%;    
+  height: auto;
+  border-radius: 0;
+} 
+.linkswrap {    
+  margin-top: 2%;  
+  width: 100%;          
+  background: rgb(56, 56, 56);
+  color: rgb(220, 220, 220);
 }
 .linkswrap ul {
   list-style-type: none;
   margin: 0 auto;
-  padding: 0;
+  padding: 0;  
 }
 .linkswrap li {  
   margin: 2% 3%;
+  padding-bottom: 1%;
+  border-bottom: 1.5px solid rgb(75, 118, 125);
 }
 .linkswrap li a {
   text-decoration: none;
-  color: rgb(220, 220, 220);
+  color: rgb(80, 133, 171);
   
 }
 .linkswrap li a:hover {
@@ -108,12 +123,4 @@ pre {
 }
 .linkswrap li a:active {
   color: rgb(118, 118, 118);
-}
-.codelogo {
-  text-align: center;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 14pt;
-    color: white;    
-    padding: 2%;
-    border-bottom: 1.5px solid rgb(125, 125, 125);
 }

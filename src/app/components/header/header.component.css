@@ -1,31 +1,33 @@
+#main {
+    display: flex;
+    flex-direction: row;
+    border: 2px solid rgb(105, 96, 96);
+    width: 98%; 
+    height: 8%;   
+    margin: 0.5%;                
+    z-index: 999;
+}
 nav {
-    background-color: rgba(68, 68, 68, 0.8); 
+    display: flex;
+    flex-direction: row;
+    background-color: rgba(68, 68, 68, 0.5); 
     height: 100%;   
     width: 100%;
 }
-ul {
-    width: 100%;
-    margin: 0 auto;    
+ul {    
+    width: 70%;  
 }
 li {
-    margin: 0 1%;
+    margin: 0 2%;
 }
-button {      
-    border: 0;        
-    color: rgba(186, 185, 185, 0.8);
+button {             
+    border: 0;   
+    background-color: rgb(102, 101, 123);     
+    color: rgb(255, 255, 255);
     font-family: "Times New Roman", Times, serif;
     font-size: 14pt;
-    transition: color 0.5s;
+    transition: background-color 0.3s;
 }
 button:hover {
-    color: rgb(255, 255, 255);
-}
-#main {
-    border: 3px solid rgb(78, 78, 78);
-    width: 98%; 
-    height: 8%;   
-    margin: 1%;        
-    position: sticky;    
-    top: 5px;    
-    z-index: 999;
+    background: rgb(70, 69, 84);   
 }

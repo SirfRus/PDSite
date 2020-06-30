@@ -1,29 +1,90 @@
-#field {  
-    display: flex; 
-    flex-direction: column;      
-    width: 90%;
-    min-height: 96%;
-    margin: 1% auto;  
-    margin-bottom: 1%;
-    border: 1.5px solid rgba(47, 47, 47, 0.2);       
-    border-radius: 5px; 
-    background: rgb(79, 79, 79);  
-  }
-  img {
-    display: block;
-    margin-top: 2%;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-  }
-  .infolist {  
-    margin: 0 auto;
-    width: 90%;  
-  }
-  .infolist p {
-    margin-top: 1%;
-    margin-bottom: 1%;
-    color: white;
-    font-family: "Times New Roman", Times, serif;
-    font-size: 14pt;
-  }
+#field {
+  display: flex; 
+  flex-direction: row;  
+  width: 90%;  
+  margin: 0.5% auto;      
+  border: 5 px solid rgba(78, 81, 96, 0.8);           
+  background: rgba(199, 191, 191, 0.5);     
+}
+.maincol {
+  margin: 1%;  
+  width: 70%;    
+}
+.imgwrap {    
+  width: 100%;  
+}
+.imgwrap img {
+  width: 100%;
+  height: auto;
+  border-bottom: 3px solid rgb(76, 75, 95);
+  padding-bottom: 5px;
+  margin-bottom: 5px;
+}
+
+.sidewrap {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+  margin: 1%;
+}
+
+.mediacol {
+  padding: 1%;    
+  width: 100%;    
+  background: rgb(179, 170, 170); 
+}
+.videowrap {
+  width: 100%;  
+}
+.video {
+  width: 100%;  
+  height: auto;
+}
+
+.submcol {  
+  margin-top: 2%;
+  padding: 1%;
+  width: 100%;     
+  background: rgb(121, 123, 125);
+}
+.team {
+  display: flex;
+  flex-direction: column;
+  width: 100%;  
+}
+.mate {
+  display: flex;
+  flex-direction: row;
+  border: 1.5px solid rgb(86, 91, 100);
+  width: 100%;
+  padding: 2%;
+  margin-bottom: 1%;  
+  background-color: rgb(60, 66, 76);
+}
+.mateinfo {
+  margin-right: 1%;
+  width: 74%;
+  font-family: "Times New Roman", Times, serif;
+  font-size: 12pt;
+  color: rgb(211, 206, 206);
+}
+.mateinfo p {  
+  border-bottom: 1px solid rgb(75, 118, 125);
+}
+.mateinfo a {
+  text-decoration: none;
+  color: rgb(80, 133, 171);
+}
+.mateinfo a:hover {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.img {  
+  width: 25%;      
+}
+.img img {
+  border: 0.5px solid black;
+  border-radius: 20px;
+  width: 100%;
+  height: auto;
+}

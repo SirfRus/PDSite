@@ -25,6 +25,7 @@
     "bootstrap": "^4.5.0",
     "highlightjs": "^9.16.2",
     "jquery": "^3.5.1",
+    "mat-video": "^2.8.1",
     "ngx-highlightjs": "^4.1.0-beta",
     "rxjs": "~6.5.4",
     "tslib": "^1.10.0",

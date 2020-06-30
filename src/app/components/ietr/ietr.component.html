@@ -1,39 +1,38 @@
-<div id="field">
 
-  <mat-drawer-container class="example-container">        
+<mat-drawer-container class="example-container">        
 
-    <mat-drawer #drawer class="example-sidenav" mode="over" id="list">
-      <ul class="list-group list-group-flush" *ngFor="let obj of exmDB">
-        <li class="list-group-item"><button mat-button (click)="chooseExm(obj.id, obj.src, obj.name)">{{obj.id}} : {{obj.name}} </button></li>          
-      </ul>
-    </mat-drawer>    
+  <mat-drawer #drawer class="example-sidenav" mode="over" id="list">
+    <ul class="list-group list-group-flush" *ngFor="let obj of exmDB">
+      <li class="list-group-item"><button mat-button (click)="chooseExm(obj.id, obj.src, obj.name)">{{obj.id}} : {{obj.name}} </button></li>          
+    </ul>
+  </mat-drawer>    
+
+  <div id="butdiv">          
+    <mat-button-toggle value="left" aria-label="Text align left" (click)="drawer.toggle()">
+      <mat-icon>format_align_left</mat-icon>
+    </mat-button-toggle>      
+  </div>      
+
+  <div id="logo">
+    {{exmName}}
+  </div>
   
-    <div id="butdiv">          
-      <mat-button-toggle value="left" aria-label="Text align left" (click)="drawer.toggle()">
-        <mat-icon>format_align_left</mat-icon>
-      </mat-button-toggle>      
-    </div>      
-
-    <div id="logo">
-      {{exmName}}
+  <div class="example-show">              
+    <div class="codewrap">        
+      <pre><p class="codelogo">Код программы</p>{{code[idchecker-1].code}}</pre>
     </div>
-    
-    <div id="exampleshow">              
-      <div class="codewrap">        
-        <pre><p class="codelogo">Код программы</p><code>{{code[idchecker-1].code}}</code></pre>
-      </div>
+    <div class="sidewrap">
       <div class="imgwrap">          
         <img [src]="link" class="img-thumbnail" alt="Responsive image">          
       </div>
       <div class="linkswrap">
-        <p class="codelogo">Список классов и функций</p>
+        <p class="codelogo">Список используемых классов и функций</p>
         <ul *ngFor="let obj of code[idchecker-1].links">
-          <li><a [href]="obj.href" target="_blank">{{obj.link}}</a></li>          
+          <li><a [href]="obj.href" target="_blank">{{obj.link}}</a>{{obj.des}}</li>          
         </ul>
       </div>
-    </div>          
+    </div>      
+  </div>     
+       
+</mat-drawer-container>    
 
-  </mat-drawer-container>    
-      
-</div>
-  

@@ -1,8 +1,20 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~highlight.js/styles/github.css';
-html, body { height: 100%; }
+html {
+  scroll-behavior: smooth;
+}
+html, body { height: 100%;}
 body { 
     margin: 0;
     font-family: Roboto, "Helvetica Neue", sans-serif;    
-    background: rgb(53, 53, 59);
+    background: url(../src/assets/Back.jpg);
+    
  }
+ body::-webkit-scrollbar {
+    width: 1em;
+    background: rgb(122, 130, 135);
+  }
+  body::-webkit-scrollbar-thumb {
+    background-color: rgb(73, 80, 90);
+    outline: 1px solid slategrey;
+  }

@@ -54,39 +54,48 @@ export class DatacontainerService {
         `,
         links: [
             {                
-                link: `MbCartPoint::Add(X, Y) - создание двумерной точки. X, Y –  координаты точек.`,
+                link: `MbCartPoint::Add(X, Y)`,
+                des: ` - создание двумерной точки. X, Y –  координаты точек.`,
                 href: `https://c3d.ascon.ru/doc/math/class_mb_cart_point.html#a730323c8cacf593c0719cbac98a709ae`
             },
             {                
-                link: `MbPolyline* pPolyline = newMbPolyline(arrPnts, false) - создание контура из массива точек.`,
+                link: `MbPolyline* pPolyline = newMbPolyline(arrPnts, false)`,
+                des: ` - создание контура из массива точек.`,
                 href: `https://c3d.ascon.ru/doc/math/class_mb_polyline.html`
             },
             {                
                 link: `ChamferPolyContour(pPolyline, 5.5, false, false, arrPnts[4]) - создание фаски`,
+                des: ` - создание фаски`,
                 href: `https://c3d.ascon.ru/doc/math/group___algorithms__2_d.html#ga7dfa2b52d0d05ae91dca84de35ed34dd`
             },
             {                
                 link: `MbContour* pContour = newMbContour(*pPolyline, true) - применение фаски на контуре`,
+                des: ` - применение фаски на контуре`,
                 href: `https://c3d.ascon.ru/doc/math/class_mb_contour.html`
             },
             {                
                 link: `FilletPolyContour(pPolyline, 5, false, arrPnts[2], pContour) - создание сопряжения на контуре`,
+                des: ` - создание сопряжения на контуре`,
                 href: `https://c3d.ascon.ru/doc/math/group___algorithms__2_d.html#ga89deb3b8febcc1128905161999fa97ae`
             },           
             {                
-                link: `MbArc* pArc = newMbArc(arcCenter, RADIUS, arrPnts[7], arrPnts[0], 1 /*initSense*/) –     создаем арку на эскизе.`,
+                link: `MbArc* pArc = newMbArc(arcCenter, RADIUS, arrPnts[7], arrPnts[0], 1 /*initSense*/) – создаем арку на эскизе.`,
+                des: ` – создаем арку на эскизе.`,
                 href: `https://c3d.ascon.ru/doc/math/class_mb_arc.html`
             },
             {                
                 link: `pContour->AddSegment(pArc) – отображение арки на эскизе.`,
+                des: ` – отображение арки на эскизе.`,
                 href: `https://c3d.ascon.ru/doc/math/class_mb_contour.html#af73017659948d7eedf9e18ecad031d60`                
             },
             {                
                 link: `viewManager->AddObject(Style(1, RGB(0, 0, 255)), pContour, &pl) – отображение контура`,
+                des: ` – отображение контура`,
                 href: `https://c3d.ascon.ru/doc/math/class_render_container.html#a7d88739edf478f8c62a394b302863de8`
             },
             {                
                 link: `::DeleteItem() - функция уменьшения счетчика ссылок динамически созданных объектов ядра.`,
+                des: ` - функция уменьшения счетчика ссылок динамически созданных объектов ядра.`,
                 href: `https://c3d.ascon.ru/doc/math/class_mb_assembly.html#a1dede90dbdf6952021115fa319c377ca`
             }
         ]                         
@@ -180,39 +189,48 @@ export class DatacontainerService {
         `,
         links: [
             {                
-                link: `MbCartPoint::Add(X, Y) - создание двумерной точки. X, Y –  координаты точек.`,
+                link: `MbCartPoint::Add(X, Y)`,
+                des: ` - создание двумерной точки. X, Y –  координаты точек.`,
                 href: `https://c3d.ascon.ru/doc/math/class_mb_cart_point.html#a730323c8cacf593c0719cbac98a709ae`
             },
             {                
-                link: `MbPolyline* pPolyline = newMbPolyline(arrPnts, false) - создание контура из массива точек.`,
+                link: `MbPolyline* pPolyline = newMbPolyline(arrPnts, false)`,
+                des: ` - создание контура из массива точек.`,
                 href: `https://c3d.ascon.ru/doc/math/class_mb_polyline.html`
             },
             {                
-                link: `ChamferPolyContour(pPolyline, 5.5, false, false, arrPnts[4]) - создание фаски`,
+                link: `ChamferPolyContour(pPolyline, 5.5, false, false, arrPnts[4])`,
+                des: ` - создание фаски`,
                 href: `https://c3d.ascon.ru/doc/math/group___algorithms__2_d.html#ga7dfa2b52d0d05ae91dca84de35ed34dd`
             },
             {                
-                link: `MbContour* pContour = newMbContour(*pPolyline, true) - применение фаски на контуре`,
+                link: `MbContour* pContour = newMbContour(*pPolyline, true)`,
+                des: ` - применение фаски на контуре`,
                 href: `https://c3d.ascon.ru/doc/math/class_mb_contour.html`
             },
             {                
-                link: `FilletPolyContour(pPolyline, 5, false, arrPnts[2], pContour) - создание сопряжения на контуре`,
+                link: `FilletPolyContour(pPolyline, 5, false, arrPnts[2], pContour)`,
+                des: ` - создание сопряжения на контуре`,
                 href: `https://c3d.ascon.ru/doc/math/group___algorithms__2_d.html#ga89deb3b8febcc1128905161999fa97ae`
             },           
             {                
-                link: `MbArc* pArc = newMbArc(arcCenter, RADIUS, arrPnts[7], arrPnts[0], 1 /*initSense*/) –     создаем арку на эскизе.`,
+                link: `MbArc* pArc = newMbArc(arcCenter, RADIUS, arrPnts[7], arrPnts[0], 1 /*initSense*/)`,
+                des: ` – создаем арку на эскизе.`,
                 href: `https://c3d.ascon.ru/doc/math/class_mb_arc.html`
             },
             {                
-                link: `pContour->AddSegment(pArc) – отображение арки на эскизе.`,
+                link: `pContour->AddSegment(pArc)`,
+                des: ` – отображение арки на эскизе.`,
                 href: `https://c3d.ascon.ru/doc/math/class_mb_contour.html#af73017659948d7eedf9e18ecad031d60`                
             },
             {                
-                link: `viewManager->AddObject(Style(1, RGB(0, 0, 255)), pContour, &pl) – отображение контура`,
+                link: `viewManager->AddObject(Style(1, RGB(0, 0, 255)), pContour, &pl)`,
+                des: ` – отображение контура`,
                 href: `https://c3d.ascon.ru/doc/math/class_render_container.html#a7d88739edf478f8c62a394b302863de8`
             },
             {                
-                link: `::DeleteItem() - функция уменьшения счетчика ссылок динамически созданных объектов ядра.`,
+                link: `::DeleteItem()`,
+                des: ` - функция уменьшения счетчика ссылок динамически созданных объектов ядра.`,
                 href: `https://c3d.ascon.ru/doc/math/class_mb_assembly.html#a1dede90dbdf6952021115fa319c377ca`
             }
         ]                 
@@ -317,9 +335,50 @@ export class DatacontainerService {
         `,
         links: [
             {                
-                link: `MbCartPoint::Add(X, Y) - создание двумерной точки. X, Y –  координаты точек.`,
-                href: `https://c3d.ascon.ru/doc/math/class_mb_cart_point.html#a730323c8cacf593c0719cbac98a709ae`
-            }            
+                link: `CreateSketch`,
+                des: ` – пользовательская функция для создание эскиза.`,
+                href: ``
+            },
+            {
+                link: `MbResultType::ExtrusionSOlid `,
+                des: `– функция создание модели выдавливания.`,
+                href: `https://c3d.ascon.ru/doc/math/group___solid___modeling.html#ga33c85e210d286714dd4fa2f3072e47ea`
+            },
+            {
+                link: `MbPlane`,
+                des: ` - класс плоскости`,
+                href: `https://c3d.ascon.ru/doc/math/class_mb_plane.html`
+            },
+            {
+                link: `MbCartPoint3D`,
+                des: ` - класс точки в трехмерном пространстве`,
+                href: `https://c3d.ascon.ru/doc/math/class_mb_cart_point3_d.html`
+            },
+            {
+                link: `MbVector3D`,
+                des: ` - класс вектора в трехмерном пространстве`,
+                href: `https://c3d.ascon.ru/doc/math/class_mb_vector3_d.html`
+            },
+            {
+                link: `MbSweptData`,
+                des: ` - класс данных образующей`,
+                href: `https://c3d.ascon.ru/doc/math/class_mb_swept_data.html`
+            },
+            {
+                link: `MbSNameMaker`,
+                des: ` - класс для генерирования имен`,
+                href: `https://c3d.ascon.ru/doc/math/class_mb_s_name_maker.html`
+            },
+            {
+                link: `MbSolid`,
+                des: ` - класс твердого тела`,
+                href: `https://c3d.ascon.ru/doc/math/class_mb_solid.html`
+            },
+            {
+                link: `MbResultType`,
+                des: ` - класс для описания конечного результата`,
+                href: `https://c3d.ascon.ru/doc/math/group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc`
+            }
         ]    
     },
     {
@@ -386,8 +445,64 @@ export class DatacontainerService {
         `,
         links: [
             {                
-                link: `MbCartPoint::Add(X, Y) - создание двумерной точки. X, Y –  координаты точек.`,
-                href: `https://c3d.ascon.ru/doc/math/class_mb_cart_point.html#a730323c8cacf593c0719cbac98a709ae`
+                link: `CreateSketch`,
+                des: ` - пользовательская функция для создания эскиза`,
+                href: ``
+            },
+            {
+                link: `MbResultType::RevolutionSolid `,
+                des: ` - функция для создания тела вращения`,
+                href: `https://c3d.ascon.ru/doc/math/group___solid___modeling.html#ga5c53e0f25aa1f4ed1060ab22d77b24ee`
+            },
+            {
+                link: `MbPolyline`,
+                des: ` - класс для создания замкнутой кривой`,
+                href: `https://c3d.ascon.ru/doc/math/class_mb_polyline.html`
+            },
+            {
+                link: `MbContour`,
+                des: ` - класс для создания контура`,
+                href: `https://c3d.ascon.ru/doc/math/class_mb_contour.html`
+            },
+            {
+                link: `MbAxis3D`,
+                des: ` - класс для создания оси`,
+                href: `https://c3d.ascon.ru/doc/math/class_mb_axis3_d.html`
+            },
+            {
+                link: `MbPlane`,
+                des: ` - класс плоскости`,
+                href: `https://c3d.ascon.ru/doc/math/class_mb_plane.html`
+            },
+            {
+                link: `MbCartPoint`,
+                des: ` - класс точки в двухмерном пространстве`,
+                href: `https://c3d.ascon.ru/doc/math/class_mb_cart_point.html`
+            },
+            {
+                link: `MbSweptData`,
+                des: ` - класс данных образующей`,
+                href: `https://c3d.ascon.ru/doc/math/class_mb_swept_data.html`
+            },
+            {
+                link: `MbSolid`,
+                des: ` - класс твердого тела`,
+                href: `https://c3d.ascon.ru/doc/math/class_mb_solid.html`
+            },
+            {
+                link: `MbSNameMaker`,
+                des: ` - класс для генерирования имен`,
+                href: `https://c3d.ascon.ru/doc/math/class_mb_s_name_maker.html`
+            },
+            {
+                link: `RevolutionValues`,
+                des: ` - свойства вращения`,
+                href: `https://c3d.ascon.ru/doc/math/class_revolution_values.html`
+            },
+            {
+                link: `MbResultType`,
+                des: ` - класс для описания конечного результата`,
+                href: `https://c3d.ascon.ru/doc/math/group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc`
             }            
         ]    
     },
@@ -439,15 +554,72 @@ export class DatacontainerService {
         `,
         links: [
             {                
-                link: `MbCartPoint::Add(X, Y) - создание двумерной точки. X, Y –  координаты точек.`,
-                href: `https://c3d.ascon.ru/doc/math/class_mb_cart_point.html#a730323c8cacf593c0719cbac98a709ae`
-            }            
+                link: `CreateSketch`,
+                des: ` - пользовательская функция для создания эскиза`,
+                href: ``
+            },
+            {
+                link: `MbResultType::ExtrusionSolid`,
+                des: ` - функция создания модели выдавливания`,
+                href: `https://c3d.ascon.ru/doc/math/group___solid___modeling.html#ga33c85e210d286714dd4fa2f3072e47ea`
+            },
+            {
+                link: `MbPolyline`,
+                des: ` - класс для создания замкнутой кривой`,
+                href: `https://c3d.ascon.ru/doc/math/class_mb_polyline.html`
+            },
+            {
+                link: `MbContour`,
+                des: ` - класс для создания контура`,
+                href: `https://c3d.ascon.ru/doc/math/class_mb_contour.html`
+            },
+            {
+                link: `MbPlane`,
+                des: ` - класс плоскости`,
+                href: `https://c3d.ascon.ru/doc/math/class_mb_plane.html`
+            },
+            {
+                link: `MbArc`,
+                des: ` - класс дуги`,
+                href: `https://c3d.ascon.ru/doc/math/class_mb_arc.html`
+            },
+            {
+                link: `MbCartPoint3D`,
+                des: ` - класс точки в трехмерном пространстве`,
+                href: `https://c3d.ascon.ru/doc/math/class_mb_cart_point3_d.html`
+            },
+            {
+                link: `MbVector3D`,
+                des: ` - класс вектора в трехмерном пространстве`,
+                href: `https://c3d.ascon.ru/doc/math/class_mb_vector3_d.html`
+            },
+            {
+                link: `MbSolid`,
+                des: ` - класс твердого тела`,
+                href: `https://c3d.ascon.ru/doc/math/class_mb_solid.html`
+            },
+            {
+                link: `MbSweptData`,
+                des: ` - класс данных образующей`,
+                href: `https://c3d.ascon.ru/doc/math/class_mb_swept_data.html`
+            },
+            {
+                link: `MbSNameMaker`,
+                des: ` - класс для генерирования имен`,
+                href: `https://c3d.ascon.ru/doc/math/class_mb_s_name_maker.html`
+            },
+            {
+                link: `MbResultType`,
+                des: ` - класс для описания конечного результата`,
+                href: `https://c3d.ascon.ru/doc/math/group___base___items.html#gad298d2af79e3480e59c381ffb111b0bc`
+            }                  
         ]    
     },
     {
         id: 7,
         code: `
-        void CreateSketch (RPArray<MbSurface>& _arrSurfaces, RPArray<MbContour>& _arrContours, double vert,double hor, double OFS_X, double OFS_Y, double OFS_Z, double d)
+        void CreateSketch (RPArray<MbSurface>& _arrSurfaces, RPArray<MbContour>& _arrContours, double vert,double hor, 
+            double OFS_X, double OFS_Y, double OFS_Z, double d)
         {
         double l = d * 0.4472138576667362;
         SArray<MbCartPoint>arrPnts(4);
@@ -500,9 +672,46 @@ export class DatacontainerService {
         `,
         links: [
             {                
-                link: `MbCartPoint::Add(X, Y) - создание двумерной точки. X, Y –  координаты точек.`,
-                href: `https://c3d.ascon.ru/doc/math/class_mb_cart_point.html#a730323c8cacf593c0719cbac98a709ae`
-            }            
+                link: `CreateSketch`,
+                des: ` - пользовательская функция для создания эскиза`,
+                href: ``
+            },
+            {
+                link: `MbResultType::LoftedSolid`,
+                des: ` - функция построения тела заметания`,
+                href: `https://c3d.ascon.ru/doc/math/group___solid___modeling.html#gad7916b9ed767a896152b27a35b5301ca`
+            },
+            {
+                link: `MbArc`,
+                des: ` - класс дуги`,
+                href: `https://c3d.ascon.ru/doc/math/class_mb_arc.html`
+            },
+            {
+                link: `MbPlacement3D`,
+                des: ` - класс локальной системы координат в трехмерном пространстве`,
+                href: `https://c3d.ascon.ru/doc/math/class_mb_placement3_d.html`
+            },
+            {
+                link: `MbCartPoint3D`,
+                des: ` - класс точки в трехмерном пространстве`,
+                href: `https://c3d.ascon.ru/doc/math/class_mb_cart_point3_d.html`
+            },
+            {
+                link: `MbSurface`,
+                des: ` - класс поверхности в трехмерном пространстве`,
+                href: `https://c3d.ascon.ru/doc/math/class_mb_surface.html`
+            },
+            {
+                link: `MbSolid`,
+                des: ` - класс твердого тела`,
+                href: `https://c3d.ascon.ru/doc/math/class_mb_solid.html`
+            },
+            {
+                link: `MbSNameMaker`,
+                des: ` - класс для генерирования имен`,
+                href: `https://c3d.ascon.ru/doc/math/class_mb_s_name_maker.html`
+            }
+
         ]    
     },
     {
